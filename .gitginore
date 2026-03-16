@@ -1,2 +1,5 @@
 my_morse
 output.txt
+*.o
+.DS_Store
+Thumbs.db
