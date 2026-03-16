@@ -64,6 +64,7 @@ int main(int argc, char *argv[]) {
             else if (c == '9') morse = "============*";
             else if (c == '0') morse = "===============";
             else if (c == ' ') morse = " ";
+            
             if (morse != NULL) {
                 fprintf(fout, "%s ", morse); 
                 int len = strlen(morse);
@@ -132,7 +133,7 @@ int main(int argc, char *argv[]) {
             else if (strcmp(token, "\n") == 0 || strcmp(token, "\r") == 0) {
             
             } else {
-                printf("\nInvalid  %s\n", token);
+                printf("\nInvalid %s\n", token);
                 fclose(fin);
                 fclose(fout);
                 return 1;
@@ -152,7 +153,7 @@ int main(int argc, char *argv[]) {
         else printf("\n");
         printf("DECODE DONE\n");
     } else {
-        printf("INVALID\n", mode);
+        printf("INVALID\n");
     }
 
     fclose(fin);
