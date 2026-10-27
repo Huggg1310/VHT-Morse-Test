@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build version 1
-        run: gcc -Wall -Wextra version_1/my_morse.c -o version_1/my_morse
+        run: gcc -Wall -Wextra version_1/src/my_morse.c -o version_1/src/my_morse
 
       - name: Build version 2
-        run: gcc -Wall -Wextra version_2/my_morse.c -o version_2/my_morse
+        run: gcc -Wall -Wextra version_2/src/my_morse.c -o version_2/src/my_morse
 
       - name: Build test
         run: gcc tests/test.c -o tests/test
